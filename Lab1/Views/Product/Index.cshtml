@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Products list</h2>
+<ul>
+    <li>@Html.ActionLink("Laptop","details","Product" ,  new { ProductName = "Laptop"},null )</li>
+    <li>@Html.ActionLink("Tablet", "details", "Product" ,new { ProductName = "Tablet" }, null)</li>
+    <li>@Html.ActionLink("Desktop", "details", "Product", new { ProductName = "Tablet" }, null)</li>
+</ul>
